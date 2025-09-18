@@ -80,6 +80,10 @@
             const CuatrimestreAlumno = document.getElementById('Cuatrimestres').value;
             const ContainerPDF = document.querySelector('.containerPDF');
 
+            //MAYUSCULAS para los datos
+            const NOMBREALUMNO = NombreAlumno.toUpperCase();
+            const CURPALUMNO = CURPAlumno.toUpperCase();
+            
             ContainerPDF.innerHTML = "";
 
             //CREAR ENCABEZADO DEL PDF
@@ -123,8 +127,8 @@
             const ThirdElement = document.createElement('p');
             ThirdElement.className = "TextPDF";
             ThirdElement.innerHTML = 
-            `Por este conducto hago constatar que <strong>${NombreAlumno}</strong> con numero de 
-            matricula <strong>${MatriculaAlumno}</strong> y CURP <strong>${CURPAlumno}</strong>, esta inscrito en el 
+            `Por este conducto hago constatar que <strong>${NOMBREALUMNO}</strong> con numero de 
+            matricula <strong>${MatriculaAlumno}</strong> y CURP <strong>${CURPALUMNO}</strong>, esta inscrito en el 
             ciclo escolar 2024-2025 y cursa el ${CuatrimestreAlumno} cuatrimestre, que inicio 
             el 06 de Mayo de 2025 y termina el 30 de Agosto del año 2025, en la 
             carrera de <strong>${CarreraAlumno}</strong>, en la Universidad Tecnológica de Culiacán, 
@@ -201,4 +205,5 @@
         }
     </script>
 </body>
+
 </html>
