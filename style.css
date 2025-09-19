@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 *{
     margin: 0px;
     padding: 0px;
@@ -240,3 +241,256 @@ button{
     height: 30px;
 
 }
+=======
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+    background-color: #162936;
+}
+.listStyle{
+    color: #27e9b5;
+    color: #3b5265;
+    color: #162936;
+}
+/**/
+h1, h2, label{
+    font-family: "Comic Neue", cursive;
+    color: #f5f5f5;
+    margin: 10px;
+}
+h2::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 5px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 10px;
+    background-color: #be1823;
+}
+h1::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 5px;
+    margin-top: 4px;
+    border: none;
+    border-radius: 10px;
+    background-color: #27e9b5;
+}
+p{
+    font-family: "Comic Neue", cursive;
+    color: #f5f5f5;
+    margin: 30px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+/**/
+header{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    height: 80px;
+    background-color: #3b5265;
+}
+.utcLogo{
+    width: fit-content;
+    height: 60px;
+    object-fit: contain;
+    margin-left: 10px;
+}
+/**/
+main{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+}
+/**/
+.heroPage{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    width: 90%;
+    height: fit-content;
+}
+/**/
+form{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+    height: fit-content;
+    margin-left: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3b5265;
+}
+input{
+    width: 200px;
+    height: 20px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 3px;
+}
+#CarreraAlumno{
+    width: 200px;
+    height: 20px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 3px;
+}
+#Cuatrimestres{
+    width: 200px;
+    height: 20px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 3px;
+}
+button{
+    color: #162936;
+    font-family: "Tektur", sans-serif;
+    width: 100px;
+    height: 30px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #27e9b5;
+    cursor: pointer;
+}
+/**/
+.containerPDF{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 735px;
+    height: fit-content;
+    margin: 10px;
+    border-radius: 5px;
+    background-color: #fff;
+}
+/**/
+.ContainerHeader{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 5px;
+    width: 100%;
+    height: fit-content;
+}
+.ImgTop{
+    width: 100%;
+    height: fit-content;
+    margin: 10px;
+}
+.ImgBan{
+    width: 90%;
+    height: fit-content;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+/**/
+.ContainerDateOficeDue{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+}
+.DateOficeDue{
+    font-family: "Open Sans", sans-serif;
+    text-align: right;
+    font-weight: 600;
+    color: #222;
+}
+/**/
+.Correspondencia{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100px;
+}
+.TextCorrespondencia{
+    color: #222;
+    font-family: "Open Sans", sans-serif;
+}
+/**/
+.ContainerTextMiddle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+    margin-bottom: 120px;
+}
+.TextPDF{
+    font-family: "Open Sans", sans-serif;
+    color: #222;
+}
+/**/
+.ContainerFirma{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+}
+.ImgMid{
+    width: 200px;
+    height: fit-content;
+    margin: 10px;
+}
+/**/
+.FooterPDF{
+    display: grid;
+    align-items: flex-end;
+    justify-items: center;
+    grid-template-columns: repeat(4, 1fr); /* 4 columnas iguales */
+    gap: 10px; /* opcional, separación entre ellas */
+    width: 100%;
+    height: fit-content;
+    margin-top: 20px;
+}
+.ImgBot1, .ImgBot2, .ImgBot3, .ImgBot4{
+    width: 95%;
+    height: fit-content;
+    object-fit: cover;
+    text-align: center;
+}
+.ImgBot3{
+    width: 70%;
+}
+/**/
+.BarraDecorativa{
+    width: 90%;
+    height: 5px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    border: none;
+    border-radius: 10px;
+    background-color: #254b33;
+}
+/**/
+#downloadBtn{
+    width: 300px;
+    height: 30px;
+}
+>>>>>>> 44a1fff (Firt Full Update)
