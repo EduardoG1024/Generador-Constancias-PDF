@@ -23,15 +23,17 @@ paleta{
     color: #8a8278;
 
 }
-#shareBtn{
+#playBtn{
     position: fixed;
     width: 70px;
-    height: 70px;
+    height: 30px;
     bottom: 10px;
-    left: 10px;
+    left: 20px;
     z-index: 100;
     border: none;
     border-radius: 5px;
+    background-color: #cdd7df;
+    cursor: pointer;
 }
 /**/
 .contenedor-img-templo{
@@ -291,4 +293,5 @@ footer{
     width: 100%;
     height: fit-content;
     background-color: #8a8278;
+
 }
