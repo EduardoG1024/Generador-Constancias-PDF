@@ -83,6 +83,29 @@ main{
     height: fit-content;
 }
 /**/
+.contenedor-hornet{
+    display: none;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    width: 100%;
+    height: fit-content;
+}
+.contenedor-hornet::after{
+    display: block;
+    content: 'Este es un secreto que solo los alumnos deben saber';
+    width: fit-content;
+    height: fit-content;
+    padding: 2px;
+    font-family: 'Open sans', cursive;
+    background-color: #f5f5f5;
+    border: none;
+}
+.hornet-aviso{
+    width: 150px;
+    height: fit-content;
+}
+/**/
 form{
     display: flex;
     align-items: flex-start;

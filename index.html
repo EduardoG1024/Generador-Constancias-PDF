@@ -33,6 +33,9 @@
                 que es seguro este lugar 🤝
             </p>
         </article>
+        <div class="contenedor-hornet">
+            <img src="img/SILKDIP.png" alt="hornet" class="hornet-aviso" loading="lazy" decoding="async">
+        </div>
 
         <form>
             <label><strong>NOMBRE COMPLETO: </strong></label>
@@ -78,6 +81,15 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
     <script>
+        const hornet = document.querySelector('.contenedor-hornet');
+        const hornetimg = document.querySelector('.hornet-aviso');
+        setTimeout(() => {
+            hornet.style.display = 'flex';
+            setTimeout(() => {
+                hornet.remove();
+            }, 10000);
+        }, 5000);
+
         function GenerarPDF(e) {
             e.preventDefault();
             alert('Revisa si tus datos son los correctos');
