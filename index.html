@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Generar Constancia</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
     <script src="script.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -39,13 +40,13 @@
 
         <form>
             <label><strong>NOMBRE COMPLETO: </strong></label>
-            <input type="text" id="NombreAlumno" required>
+            <input type="text" id="NombreAlumno" name="NombreAlumno" required>
             <label><strong>MATRICULA: </strong></label>
-            <input type="number" id="MatriculaAlumno" required>
+            <input type="number" id="MatriculaAlumno" name="MatriculaAlumno" required>
             <label><strong>CURP: </strong></label>
-            <input type="text" id="CURPAlumno" required>
+            <input type="text" id="CURPAlumno" name="CURPAlumno" required>
             <label><strong>CARRERA: </strong></label>
-            <select id="CarreraAlumno" required>
+            <select id="CarreraAlumno" name="CarreraAlumno" required>
                 <option value="Agricultura Sustentable y Protegida">Agricultura Sustentable y Protegida</option>
                 <option value="Ambiental y Sustentabilidad">Ambiental y Sustentabilidad</option>
                 <option value="Energías Renovables y Desarrollo Sostenible">Energías Renovables y Desarrollo Sostenible</option>
@@ -55,7 +56,7 @@
                 <option value="Sistemas Automotrices">Sistemas Automotrices</option>
             </select>
             <label><strong>CUATRIMESTRE: </strong></label>
-            <select id="Cuatrimestres" required>
+            <select id="Cuatrimestres" name="Cuatrimestres" required>
                 <option value="primer">primer</option>
                 <option value="segundo">segundo</option>
                 <option value="tercer">tercer</option>
@@ -72,7 +73,7 @@
             <label><strong>INICIO DEL CUATRIMESTRE: </strong></label>
             <label><strong>FIN DEL CUATRIMESTRE: </strong></label>
             -->
-            <button onclick="GenerarPDF(event)">Generar PDF</button>
+            <button onclick="GenerarPDF(event)" class="btn-guardar">Generar PDF</button>
         </form>
 
         <div class="containerPDF"></div>
