@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generar Constancia</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Caveat:wght@400..700&family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Huninn&family=M+PLUS+Rounded+1c&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Tektur:wght@400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="img/Logo-Universidad-Tecnologica-de-Culiacan.png" alt="UTC" class="utcLogo" loading="lazy" decoding="async">
+    </header>
+    
+    <main>
+        <article class="heroPage">
+            <h1>¿Que es y como funciona?🤔</h1>
+            <p>
+                En esta pagina podras crear tu constancia escolar de 
+                manera gratuita, solo debes llenar el formulario con 
+                tus datos escolares, despues hacer click en el boton 
+                "Generar PDF", al hacer click se generara una vista 
+                previa del archivo y en la parte inferior encontraras 
+                un boton para descargar el archivo.
+            </p>
+            <h2>NOTA!!!🚨</h2>
+            <p>
+                * Todos los datos que ingreses deben se ser en MAYUSCULA.<br>
+                * Tus datos no seran guardados en ningun lugar, por lo 
+                que es seguro este lugar 🤝
+            </p>
+        </article>
+        <div class="contenedor-hornet">
+            <img src="img/SILKDIP.png" alt="hornet" class="hornet-aviso" loading="lazy" decoding="async">
+        </div>
+
+        <form>
+            <label><strong>NOMBRE COMPLETO: </strong></label>
+            <input type="text" id="NombreAlumno" name="NombreAlumno" required>
+            <label><strong>MATRICULA: </strong></label>
+            <input type="number" id="MatriculaAlumno" name="MatriculaAlumno" required>
+            <label><strong>CURP: </strong></label>
+            <input type="text" id="CURPAlumno" name="CURPAlumno" required>
+            <label><strong>CARRERA: </strong></label>
+            <select id="CarreraAlumno" name="CarreraAlumno" required>
+                <option value="Agricultura Sustentable y Protegida">Agricultura Sustentable y Protegida</option>
+                <option value="Ambiental y Sustentabilidad">Ambiental y Sustentabilidad</option>
+                <option value="Energías Renovables y Desarrollo Sostenible">Energías Renovables y Desarrollo Sostenible</option>
+                <option value="Redes Inteligentes y Ciberseguridad">Redes Inteligentes y Ciberseguridad</option>
+                <option value="Gastronomía">Gastronomía</option>
+                <option value="Negocios y Mercadotecnia">Negocios y Mercadotecnia</option>
+                <option value="Sistemas Automotrices">Sistemas Automotrices</option>
+            </select>
+            <label><strong>CUATRIMESTRE: </strong></label>
+            <select id="Cuatrimestres" name="Cuatrimestres" required>
+                <option value="primer">primer</option>
+                <option value="segundo">segundo</option>
+                <option value="tercer">tercer</option>
+                <option value="cuarto">cuarto</option>
+                <option value="quinto">quinto</option>
+                <option value="sexto">sexto</option>
+                <option value="septimo">septimo</option>
+                <option value="octavo">octavo</option>
+                <option value="noveno">noveno</option>
+                <option value="decimo">decimo</option>
+                <option value="onceavo">onceavo</option>
+            </select>
+            <!--
+            <label><strong>INICIO DEL CUATRIMESTRE: </strong></label>
+            <label><strong>FIN DEL CUATRIMESTRE: </strong></label>
+            -->
+            <button onclick="GenerarPDF(event)" class="btn-guardar">Generar PDF</button>
+        </form>
+
+        <div class="containerPDF"></div>
+        <button id="downloadBtn">Descargar PDF</button>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</body>
+</html>

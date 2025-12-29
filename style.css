@@ -1,0 +1,295 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+    background: linear-gradient(135deg, #0f172a, #020617);
+}
+.listStyle{
+    color: #27e9b5;
+    color: #3b5265;
+    color: #162936;
+}
+/**/
+h1, h2, label{
+    font-family: "Comic Neue", cursive;
+    color: #f5f5f5;
+    margin: 10px;
+}
+h2::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 5px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #38bdf8, #2563eb);
+}
+h1::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 5px;
+    margin-top: 4px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #38bdf8, #2563eb);
+}
+p{
+    font-family: "Comic Neue", cursive;
+    color: #f5f5f5;
+    margin: 30px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+/**/
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 735px;
+    width: 95%;
+    height: fit-content;
+    padding: 10px 0 10px 0;
+    margin: 10px 10px 10px 10px;
+    background: #020617;
+    border: 1px solid #1e293b;
+    border-radius: 5px;
+}
+.utcLogo{
+    width: fit-content;
+    height: 60px;
+    object-fit: contain;
+    margin-left: 10px;
+}
+/**/
+main{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+}
+/**/
+.heroPage{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 735px;
+    width: 95%;
+    height: fit-content;
+    margin: 10px 10px 10px 10px;
+    background: #020617;
+    border: 1px solid #1e293b;
+    border-radius: 5px;
+}
+.heroPage p {
+    color: #94a3b8;
+}
+/**/
+.contenedor-hornet{
+    display: none;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    width: 100%;
+    height: fit-content;
+}
+.contenedor-hornet::after{
+    display: block;
+    content: 'Este es un secreto que solo los alumnos deben saber';
+    width: fit-content;
+    height: fit-content;
+    padding: 2px;
+    font-family: 'Open sans', cursive;
+    background-color: #f5f5f5;
+    border: none;
+}
+.hornet-aviso{
+    width: 150px;
+    height: fit-content;
+}
+/**/
+form{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 735px;
+    width: 95%;
+    height: fit-content;
+    margin: 10px 10px 10px 10px;
+    border: 1px solid #1e293b;
+    border-radius: 5px;
+    background: #020617;
+}
+input{
+    width: 200px;
+    height: 20px;
+    margin-left: 10px;
+    border-radius: 3px;
+    color: #94a3b8;
+    border: 1px solid #38bdf8;
+    background: transparent;
+}
+#CarreraAlumno{
+    width: 200px;
+    height: 20px;
+    margin-left: 10px;
+    border-radius: 3px;
+    color: #94a3b8;
+    border: 1px solid #38bdf8;
+    background: transparent;
+}
+#Cuatrimestres{
+    width: 200px;
+    height: 20px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 3px;
+    color: #94a3b8;
+    border: 1px solid #38bdf8;
+    background: transparent;
+}
+button{
+    font-family: "Tektur", sans-serif;
+    width: 100px;
+    height: 30px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(135deg, #38bdf8, #2563eb);
+      color: #020617;
+    cursor: pointer;
+}
+/**/
+.containerPDF{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 735px;
+    height: fit-content;
+    margin: 10px;
+    border-radius: 5px;
+    background-color: #fff;
+}
+/**/
+.ContainerHeader{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 5px;
+    width: 100%;
+    height: fit-content;
+}
+.ImgTop{
+    width: 100%;
+    height: fit-content;
+    margin: 10px;
+}
+.ImgBan{
+    width: 90%;
+    height: fit-content;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+/**/
+.ContainerDateOficeDue{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+}
+.DateOficeDue{
+    font-family: "Open Sans", sans-serif;
+    text-align: right;
+    font-weight: 600;
+    color: #222;
+}
+/**/
+.Correspondencia{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100px;
+}
+.TextCorrespondencia{
+    color: #222;
+    font-family: "Open Sans", sans-serif;
+}
+/**/
+.ContainerTextMiddle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+    margin-bottom: 120px;
+}
+.TextPDF{
+    font-family: "Open Sans", sans-serif;
+    color: #222;
+}
+/**/
+.ContainerFirma{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+}
+.ImgMid{
+    width: 200px;
+    height: fit-content;
+    margin: 10px;
+}
+/**/
+.FooterPDF{
+    display: grid;
+    align-items: flex-end;
+    justify-items: center;
+    grid-template-columns: repeat(4, 1fr); /* 4 columnas iguales */
+    gap: 10px; /* opcional, separación entre ellas */
+    width: 100%;
+    height: fit-content;
+    margin-top: 20px;
+}
+.ImgBot1, .ImgBot2, .ImgBot3, .ImgBot4{
+    width: 95%;
+    height: fit-content;
+    object-fit: cover;
+    text-align: center;
+}
+.ImgBot3{
+    width: 70%;
+}
+/**/
+.BarraDecorativa{
+    width: 90%;
+    height: 5px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    border: none;
+    border-radius: 10px;
+    background-color: #254b33;
+}
+/**/
+#downloadBtn{
+    width: 300px;
+    height: 30px;
+}
